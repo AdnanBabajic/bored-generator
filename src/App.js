@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+import React, {useState} from "react";
+import ActivityGeneration from './components/ActivityGeneration'
 import './App.css';
+import ShowActivities from './components/ShowActivities'
 
 function App() {
+  const [activities, setActivities] = useState([])
+
+  const addActivities = (activity) => {
+    setActivities([...activities, activity])
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ActivityGeneration onSave={addActivities}/>
+      <ShowActivities activities={activities}/>
+    </>
   );
 }
 

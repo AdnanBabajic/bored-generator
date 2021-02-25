@@ -1,0 +1,24 @@
+.btn{
+    margin: 4px 0 4px;
+    padding: 5px 20px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.btn--outline{
+    background-color: transparent;
+    color: #242424;
+    text-shadow: 0 0 3px #ffffff;
+    border: 1px solid #F7F7F7;
+    transition: all 0.3s ease-out;
+}
+
+.btn:hover{
+    background: #b6b4b4;
+    color: #b6b4b4;
+    transition: all 0.3s ease-out;
+    text-shadow: 0 0 3px #242424;
+}
