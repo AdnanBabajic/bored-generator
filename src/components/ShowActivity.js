@@ -1,10 +1,12 @@
-const ShowActivity = ({ activity }) => {
-  const act = activity.activity
+import './ShowActivity.css'
 
-  console.log(activity)
+const ShowActivity = ({ key, activity, onClick }) => {
+  const callPopup = () => {
+    onClick(key);
+  }
   return (
-    <div className={"show-activity"}>
-        <h3>{act}</h3>
+    <div className={"show-activity"} onClick={callPopup}>
+        <p>{activity.activity.activity}</p>
     </div>
   );
 };

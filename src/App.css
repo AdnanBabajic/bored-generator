@@ -1,9 +1,26 @@
-* {
+body {
   box-sizing: border-box;
-  margin: 0;
+  margin: 2%;
   padding: 0;
   font-family: 'PT Sans', sans-serif;
-  background: linear-gradient(#E3E3E3, #F7F7F7);
+  background: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  font-weight: 600;
+}
+.box{
+  position: relative;
+  text-align: center;
+  margin: 10% 25%;
+  border-radius: 6px;
+  border: 1px solid #e6e0e0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: rgb(217, 186, 238);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }

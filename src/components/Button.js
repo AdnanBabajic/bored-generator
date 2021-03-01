@@ -8,9 +8,9 @@ export const Button = ({
 
   return (
       <button
-        className={`btn btn--outline`}
+        className={`btn`}
         onClick={onClick}
-      >{text}
+      ><p>{text}</p>
       </button>
   );
 };

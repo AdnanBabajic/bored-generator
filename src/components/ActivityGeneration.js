@@ -27,7 +27,7 @@ export const ActivityGeneration = ({ onSave }) => {
   return (
     <>
       <div className="activities">
-        <p>{activity.activity}</p>
+        <p id='activity'>{activity.activity}</p>
         <Button text="Generate new" onClick={newActivity} />
         <Button text="Save" onClick={onSaveClick} />
       </div>
